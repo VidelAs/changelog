@@ -1,0 +1,43 @@
+# Archivos de compilación
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.user
+*.suo
+*.tmp
+*.log
+*.vs/
+.vscode/
+
+# Paquetes de NuGet
+packages/
+*.nupkg
+*.pdb
+*.snupkg
+project.lock.json
+NuGet.config
+nuget.exe
+nuget/
+*.nuget.props
+*.nuget.targets
+
+# Archivos de Visual Studio
+*.vspscc
+*.vssscc
+*.vsmdi
+*.sln.docstates
+*.userprefs
+*.csproj.user
+
+# Archivos de ReSharper
+_ReSharper*/
+*.resharper
+*.DotSettings.user
+
+# Otras configuraciones
+*.cache
+*.bak
+*.DS_Store
