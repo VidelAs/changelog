@@ -40,12 +40,14 @@
             btnMostrarCommits.TabIndex = 0;
             btnMostrarCommits.Text = "Mostrar Commits";
             btnMostrarCommits.UseVisualStyleBackColor = true;
+            btnMostrarCommits.Click += btnMostrarCommits_Click;
             // 
             // txtCommits
             // 
             txtCommits.Location = new Point(37, 120);
             txtCommits.Multiline = true;
             txtCommits.Name = "txtCommits";
+            txtCommits.ReadOnly = true;
             txtCommits.Size = new Size(421, 212);
             txtCommits.TabIndex = 1;
             // 

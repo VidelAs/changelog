@@ -24,11 +24,13 @@ namespace changelog
                     result.AppendLine(commit.Message);
                     result.AppendLine();
                 }
+                Console.WriteLine(commits.Count());
             }
 
             return result.ToString();
         }
-        private void btnMostrarCommits_Click_Click(object sender, EventArgs e)
+
+        private void btnMostrarCommits_Click(object sender, EventArgs e)
         {
             txtCommits.Text = GenerateChangelog();
         }
