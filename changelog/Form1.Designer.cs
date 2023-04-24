@@ -28,12 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btnMostrarCommits = new Button();
+            txtCommits = new TextBox();
+            SuspendLayout();
+            // 
+            // btnMostrarCommits
+            // 
+            btnMostrarCommits.Location = new Point(27, 49);
+            btnMostrarCommits.Name = "btnMostrarCommits";
+            btnMostrarCommits.Size = new Size(151, 30);
+            btnMostrarCommits.TabIndex = 0;
+            btnMostrarCommits.Text = "Mostrar Commits";
+            btnMostrarCommits.UseVisualStyleBackColor = true;
+            // 
+            // txtCommits
+            // 
+            txtCommits.Location = new Point(37, 120);
+            txtCommits.Multiline = true;
+            txtCommits.Name = "txtCommits";
+            txtCommits.Size = new Size(421, 212);
+            txtCommits.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(txtCommits);
+            Controls.Add(btnMostrarCommits);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Button btnMostrarCommits;
+        private TextBox txtCommits;
     }
 }
