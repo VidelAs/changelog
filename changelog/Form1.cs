@@ -13,6 +13,8 @@ namespace changelog
         {
             var result = new StringBuilder();
 
+            //Hello Word!
+
             using (var repo = new Repository("C:\\Users\\videl.araya\\Documents\\code\\bas\\changelog"))
             {
                 var commits = repo.Commits.QueryBy(new CommitFilter { SortBy = CommitSortStrategies.Time });
