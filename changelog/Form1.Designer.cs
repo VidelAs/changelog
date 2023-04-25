@@ -34,7 +34,7 @@
             // 
             // btnMostrarCommits
             // 
-            btnMostrarCommits.Location = new Point(27, 49);
+            btnMostrarCommits.Location = new Point(305, 408);
             btnMostrarCommits.Name = "btnMostrarCommits";
             btnMostrarCommits.Size = new Size(151, 30);
             btnMostrarCommits.TabIndex = 0;
@@ -44,18 +44,18 @@
             // 
             // txtCommits
             // 
-            txtCommits.Location = new Point(37, 120);
+            txtCommits.Location = new Point(12, 12);
             txtCommits.Multiline = true;
             txtCommits.Name = "txtCommits";
             txtCommits.ReadOnly = true;
-            txtCommits.Size = new Size(421, 212);
+            txtCommits.Size = new Size(444, 380);
             txtCommits.TabIndex = 1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(498, 450);
             Controls.Add(txtCommits);
             Controls.Add(btnMostrarCommits);
             Name = "Form1";
