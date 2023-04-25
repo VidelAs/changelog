@@ -21,17 +21,17 @@ namespace changelog
 
                 foreach (var commit in commits)
                 {
-                    result.AppendLine($"### {commit.MessageShort}");
-                    result.AppendLine();
+                    // result.AppendLine($"{commit.MessageShort}");
+                    result.AppendLine($"{commit.Author.Name}");
+                    result.AppendLine($"{commit.Author.When}");
                     result.AppendLine(commit.Message);
-                    result.AppendLine();
+                    result.AppendLine("------------------------------------------------------------------");
                 }
                 Console.WriteLine(commits.Count());
             }
 
             return result.ToString();
         }
-
         private void btnMostrarCommits_Click(object sender, EventArgs e)
         {
             txtCommits.Text = GenerateChangelog();

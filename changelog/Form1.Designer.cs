@@ -29,14 +29,15 @@
         private void InitializeComponent()
         {
             btnMostrarCommits = new Button();
-            txtCommits = new TextBox();
+            txtCommits = new RichTextBox();
             SuspendLayout();
             // 
             // btnMostrarCommits
             // 
-            btnMostrarCommits.Location = new Point(305, 408);
+            btnMostrarCommits.Location = new Point(364, 599);
+            btnMostrarCommits.Margin = new Padding(3, 4, 3, 4);
             btnMostrarCommits.Name = "btnMostrarCommits";
-            btnMostrarCommits.Size = new Size(151, 30);
+            btnMostrarCommits.Size = new Size(173, 40);
             btnMostrarCommits.TabIndex = 0;
             btnMostrarCommits.Text = "Mostrar Commits";
             btnMostrarCommits.UseVisualStyleBackColor = true;
@@ -44,29 +45,31 @@
             // 
             // txtCommits
             // 
-            txtCommits.Location = new Point(12, 12);
-            txtCommits.Multiline = true;
+            txtCommits.Location = new Point(38, 29);
+            txtCommits.Margin = new Padding(3, 4, 3, 4);
             txtCommits.Name = "txtCommits";
             txtCommits.ReadOnly = true;
-            txtCommits.Size = new Size(444, 380);
-            txtCommits.TabIndex = 1;
+            txtCommits.Size = new Size(499, 524);
+            txtCommits.TabIndex = 2;
+            txtCommits.Text = "";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(498, 450);
+            ClientSize = new Size(569, 650);
             Controls.Add(txtCommits);
             Controls.Add(btnMostrarCommits);
+            Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private Button btnMostrarCommits;
-        private TextBox txtCommits;
+        private RichTextBox txtCommits;
     }
 }
