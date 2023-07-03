@@ -49,7 +49,7 @@
             txtCommits.Margin = new Padding(3, 4, 3, 4);
             txtCommits.Name = "txtCommits";
             txtCommits.ReadOnly = true;
-            txtCommits.Size = new Size(499, 524);
+            txtCommits.Size = new Size(736, 524);
             txtCommits.TabIndex = 2;
             txtCommits.Text = "";
             // 
@@ -57,7 +57,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(569, 650);
+            ClientSize = new Size(809, 650);
             Controls.Add(txtCommits);
             Controls.Add(btnMostrarCommits);
             Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
